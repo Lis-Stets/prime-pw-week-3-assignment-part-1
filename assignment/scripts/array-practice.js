@@ -40,6 +40,7 @@ console.log( 'the last animal is', animalArray[3] )
 //      instead of the exact index number of the last item
 let aaLength = animalArray.length
 console.log( 'the last animal is', animalArray[aaLength - 1] )
+
 console.log( 'the last animal is', animalArray[animalArray.length - 1] )
 
 
@@ -101,6 +102,14 @@ console.log( 'reverse alphabatized:', favoriteFoods );
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+
+let foodString = 'My favorite foods are '
+for( let i=0; i<favoriteFoods.length-1; i++ ){
+    foodString= foodString + favoriteFoods[i];
+    foodString= foodString + " and ";
+    }
+    foodString= foodString + favoriteFoods[4]
+    console.log(foodString);
 
 
 
